@@ -46,18 +46,6 @@ RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
 		zlib1g-dev \
 	&& \
 	# Skip installing gem docs
-	echo "gem: --no-document" > ~/.gemrc && \
-	mkdir -p ~/ruby && \
-	downloadURL="https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR}/ruby-$RUBY_VERSION.tar.gz" && \
-	curl -sSL $downloadURL | tar -xz -C ~/ruby --strip-components=1 && \
-	cd ~/ruby && \
-	autoconf && \
-	./configure --enable-shared && \
-	make -j "$(nproc)" && \
-	sudo make install && \
-	mkdir ~/.rubygems && \
-	sudo rm -rf ~/ruby /var/lib/apt/lists/* && \
-	cd && \
 
 	ruby --version && \
 	gem --version && \
