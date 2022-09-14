@@ -9,7 +9,7 @@ LABEL maintainer="Community & CI Engineering team <community-engg@harness.io>"
 ENV RUBY_VERSION=3.1.2 \
 	RUBY_MAJOR=3.1
 
-RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
+RUN sudo apt-get install -y --no-install-recommends \
 		autoconf \
 		bison \
 		dpkg-dev \
