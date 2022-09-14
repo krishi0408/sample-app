@@ -2,53 +2,44 @@
 
 # Do not edit individual Dockerfiles manually. Instead, please make changes to the Dockerfile.template, which will be used by the build script to generate Dockerfiles.
 
-FROM cimg/base:2022.04
+FROM cimg/base:2022.08
 
 LABEL maintainer="Community & CI Engineering team <community-engg@harness.io>"
 
-ENV RUBY_VERSION=3.1.2 \
-	RUBY_MAJOR=3.1
+ENV PYENV_ROOT=/home/circleci/.pyenv \
+	PATH=/home/circleci/.pyenv/shims:/home/circleci/.pyenv/bin:/home/circleci/.poetry/bin:$PATH
 
-RUN sudo apt-get install -y --no-install-recommends \
-		autoconf \
-		bison \
-		dpkg-dev \
-		# Rails dep
-		ffmpeg \
-		# until the base image has it
-		libcurl4-openssl-dev \
-		libffi-dev \
-		libgdbm6 \
-		libgdbm-dev \
-		# Rails dep
-		libmysqlclient-dev \
+RUN sudo apt-get update && sudo apt-get install -y \
+		build-essential \
+		ca-certificates \
+		curl \
+		git \
+		libbz2-dev \
+		liblzma-dev \
 		libncurses5-dev \
-		# Rails dep
-		libpq-dev \
-		libreadline6-dev \
-		# install libsqlite3-dev until the base image has it
-		# Rails dep
+		libncursesw5-dev \
+		libreadline-dev \
+		libffi-dev \
 		libsqlite3-dev \
 		libssl-dev \
-		# Rails dep
 		libxml2-dev \
-		libyaml-dev \
-		# Rails dep
-		memcached \
-		# Rails dep
-		mupdf \
-		# Rails dep
-		mupdf-tools \
-		# Rails dep
-		imagemagick \
-		# Rails dep
-		sqlite3 \
-		zlib1g-dev \
-	&& \
-	# Skip installing gem docs
+		libxmlsec1-dev \
+		llvm \
+		make \
+		python-openssl \
+		tk-dev \
+		wget \
+		xz-utils \
+		zlib1g-dev && \
+	curl https://pyenv.run | bash && \
+	sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-	ruby --version && \
-	gem --version && \
-	sudo gem update --system && \
-	gem --version && \
-	bundle --version
+RUN env PYTHON_CONFIGURE_OPTS="--enable-shared --enable-optimizations" pyenv install 3.10.6 && pyenv global 3.10.6
+
+RUN python --version && \
+	pip --version && \
+	# This installs pipenv at the latest version, currently 2020.6.2
+	pip install pipenv wheel
+
+# This installs version poetry at the latest version. poetry is updated about twice a month.
+RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
