@@ -6,9 +6,6 @@ FROM cimg/base:2022.08
 
 LABEL maintainer="Community & CI Engineering team <community-engg@harness.io>"
 
-ENV PYENV_ROOT=/home/circleci/.pyenv \
-	PATH=/home/circleci/.pyenv/shims:/home/circleci/.pyenv/bin:/home/circleci/.poetry/bin:$PATH
-
 RUN sudo apt-get update && sudo apt-get install -y \
 		build-essential \
 		ca-certificates \
