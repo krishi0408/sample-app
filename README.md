@@ -39,6 +39,9 @@ Here we have build a simple two-stage CI Pipeline in Harness. Setting up and run
 4.Pull the uploaded image to the build farm as a Background Task. Check out more about background tasks here
 5.Run an integration test against the sample app.
 
+## Graphical Summary
+
+![alt text](https://files.helpdocs.io/i5nl071jo5/articles/x0d77ktjw8/1611599684642/image.png)
 
 ## Docs
 
