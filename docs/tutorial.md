@@ -87,6 +87,7 @@ Then go to Execution (In this step we are going to compile the code)
  - Shell: ```Sh```
  - Command
    ```python3 -m venv venv```
+   
    ```python -m compileall ./```
  - Then click ```Apply changes``` 
                
