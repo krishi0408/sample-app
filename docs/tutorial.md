@@ -101,6 +101,16 @@ Then go to Execution (In this step we are going to compile the code)
       **Container registry - Click on docker connecter created in the previous step 
       **Image - ```alpine```
       **Commands - Copy the following command and click on apply changes.
+         
+         ```touch pythondockerfile
+         cat > pythondockerfile <<- EOM
+         FROM python:3.10.6-alpine
+         WORKDIR /py-sample-proj
+         ADD . /py-sample-proj
+         RUN pip install -r requirements.txt
+         CMD ["python" , "app.py"]
+         EOM
+         cat pythondockerfile```
 
 
 
