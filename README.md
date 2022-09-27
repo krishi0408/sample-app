@@ -1,8 +1,8 @@
 # Python Sample Pipelines in Harness
 
-# To Do
+## To Do
 
-TODO:
+TO DO:
 - [ ] Understanding the basics of Harness 
 - [ ] Requirements
 - [ ] Environment
@@ -12,7 +12,7 @@ TODO:
 - [ ] License info
 - [ ] [Harness Community - Communication Guide](https://github.com/harness-community/overview/blob/main/community_communication_guide.rst)
 
-Introduction
+##Introduction
 ========================
 This repository is a home for snippets of YAML code and a sample hello world server of scripting for the Harness CI Community.
 
