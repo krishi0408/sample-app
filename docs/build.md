@@ -56,7 +56,7 @@ Then go to Execution (In this step we are going to compile the code)
          - Secret Token - [Check out how to create docker PAT](DockerPat.md)
        - Connect to Provider 
          - Choose connect through harness delegate -> Select Harness delegate you created 
-       - It will take sometime to verify your credentials.
+         - It will take sometime to verify your credentials.
   - Image:```python:3.10.6-alpine```
   - Shell: ```Sh```
   - Command:
