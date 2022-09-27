@@ -1,6 +1,9 @@
 ### Build Step
 - Click on ```Add Stage``` to get started with the pipeline creation
 - Select the type of stage as ```Build```
+
+<img width="1792" alt="Screenshot 2022-09-09 at 10 53 12 AM" src="https://user-images.githubusercontent.com/109092049/192598696-a311f0b8-5c8e-46be-9a48-779d1c358bbb.png">
+
 - Configure the Stage Settings as below
   - Name: ```build test and run```
 
@@ -9,6 +12,8 @@
 Select ```Connectors``` -> Click on ```+ New Connector```
 
 Connector Type: ```Github```
+
+<img width="1792" alt="Screenshot 2022-09-09 at 10 55 35 AM" src="https://user-images.githubusercontent.com/109092049/192598730-107417b7-4aa3-410b-9379-346b66d3e58d.png">
 
 Name: ```python-sample-connector ```
 
