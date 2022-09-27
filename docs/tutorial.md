@@ -67,6 +67,7 @@ To develop more understanding on Connectors [check out the docs here](overview.m
 
 Then go to Execution (In this step we are going to compile the code)
 #### Code Compilation
+
 - Click on ```Add step``` 
  - Go to ```Build``` and click on ```Run```
  - Change the settings as following 
@@ -94,15 +95,16 @@ Then go to Execution (In this step we are going to compile the code)
     ```python -m compileall ./```
   - Then click ```Apply changes``` 
  
- ####  Image Creation             
+ ####  Image Creation  
+ 
  - Click on ```Add step```
    - Go to builds and click on run 
    - Change the settings as following:
    
-      [ ] Name: ```create image``` 
-      [ ]Container registry: Click on docker connecter created in the previous step 
-      [ ]Image: ```alpine```
-      [ ]Commands: Copy the following command and click on apply changes.
+      Name: ```create image``` 
+      Container registry: Click on docker connecter created in the previous step 
+      Image: ```alpine```
+      Commands: Copy the following command and click on apply changes.
          
          touch pythondockerfile
          cat > pythondockerfile <<- EOM
