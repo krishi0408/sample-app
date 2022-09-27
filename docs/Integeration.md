@@ -39,7 +39,7 @@ Next, we can run an integration test. We'll simply test the connection to the se
         curl localhost:5000
        ```
      - Select ```Apply Changes```.
-## Step 3: Run the Pipeline
+## Run the Pipeline
  - Click ↑Save.
  - Click ```Run```. 
  - The Pipeline Inputs settings appear.
