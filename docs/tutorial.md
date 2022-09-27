@@ -69,7 +69,18 @@ Then go to Execution (In this step we are going to compile the code)
 - Go to Build and click on Run 
 - Change the settings as following 
 - Name: ```Code compile```
-Container Registry -> Choose ``New connector```
+Container Registry -> Choose ```New connector```
+   - Click on ```Docker Registry```
+   - Change the settings as following 
+       - Overview 
+       - Name-docker quickstart 
+       - Details 
+       - Docker registry url - https://index.docker.io/v1/
+       - Provider type - Docker Hub 
+       - Authentication -Username and Password
+       - Username - Docker hub username 
+       - Secret Token -
+
 
 
 
