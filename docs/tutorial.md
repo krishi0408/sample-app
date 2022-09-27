@@ -73,13 +73,16 @@ Container Registry -> Choose ```New connector```
    - Click on ```Docker Registry```
    - Change the settings as following 
        - Overview 
-       - Name-docker quickstart 
+       - Name- ```docker quickstart```
        - Details 
-       - Docker registry url - https://index.docker.io/v1/
-       - Provider type - Docker Hub 
-       - Authentication -Username and Password
-       - Username - Docker hub username 
-       - Secret Token -
+       - Docker registry url -  ```https://index.docker.io/v1/```
+       - Provider type - ```Docker Hub``` 
+       - Authentication - ```Username and Password```
+         - Username - Docker hub username 
+         - Secret Token - [Check out how to create docker PAT](Secret.md)
+       - Connect to Provider - Choose connect through harness delegate -> Select Harness delegate you created 
+       - It will take sometime to verify your credentials.
+
 
 
 
