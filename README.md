@@ -24,7 +24,7 @@ TO DO:
 **[Harness Sample YAML](https://github.com/harness-community/python-pipeline-samples/blob/main/.harness/input.yaml)**<br>
 **[Getting Started](#GettingStarted)**<br>
 **[Workflow](#Workflow)**<br>
-**[Build Instructions](docs/build.md)**<br>
+**[Build Instructions](docs/tutorial.md)**<br>
 
 ## Getting Started
 
@@ -33,11 +33,11 @@ Use this README to get started with our sample pipeline repository for Python. T
 Here we have build a simple two-stage CI Pipeline in Harness. Setting up and running the Pipeline will take about 30 minutes. The Pipeline will build and run a unit test on a sample nodejs repository upload the artifact to Docker Hub and then run integration tests. You can use publicly-available code, images, and your Github and Docker Hub accounts.
 
 ## Workflow
-1.Use a Kubernetes cluster build farm.
-2.Build the code and run unit tests in the build farm.
-3.Package the app as a Docker image and upload it to Docker Hub.
-4.Pull the uploaded image to the build farm as a Background Task. Check out more about background tasks here
-5.Run an integration test against the sample app.
+- Use a Kubernetes cluster build farm.
+- Build the code and run unit tests in the build farm.
+- Package the app as a Docker image and upload it to Docker Hub.
+- Pull the uploaded image to the build farm as a Background Task. Check out more about background tasks here
+- Run an integration test against the sample app.
 
 ## Graphical Summary
 
@@ -45,11 +45,10 @@ Here we have build a simple two-stage CI Pipeline in Harness. Setting up and run
 
 ## Docs
 
-Pipeline Creation & Build Set-up
-Configuring the infrastructure & setting up Build & Run Unit Test stage
-Build & Push Image to Docker
-Create Integration Stage
-Execute the Pipeline
+[Pipeline Creation & Build Set-up](tutorial.md)
+[Configuring the infrastructure & setting up Build & Run Unit Test stage](build.md)
+[Build & Push Image to Docker](DockerPush.md)
+[Create Integration Stage and Run the Pipeline](Integeration.md)
 
 ## Licensing
 
