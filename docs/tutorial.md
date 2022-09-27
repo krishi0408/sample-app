@@ -69,7 +69,7 @@ Then go to Execution (In this step we are going to compile the code)
 - Go to ```Build``` and click on ```Run```
 - Change the settings as following 
 - Name: ```Code compile```
-Container Registry -> Choose ```New connector```
+- Container Registry -> Choose ```New connector```
    - Click on ```Docker Registry```
    - Change the settings as following 
        - Overview 
@@ -83,12 +83,12 @@ Container Registry -> Choose ```New connector```
        - Connect to Provider 
          - Choose connect through harness delegate -> Select Harness delegate you created 
        - It will take sometime to verify your credentials.
-  - Image:```python:3.10.6-alpine```
-  - Shell: ```Sh```
-  - Command
-      ```python3 -m venv venv```
-      ```python -m compileall ./```
-  - Then click ```Apply changes``` 
+ - Image:```python:3.10.6-alpine```
+ - Shell: ```Sh```
+ - Command
+   ```python3 -m venv venv```
+   ```python -m compileall ./```
+ - Then click ```Apply changes``` 
                
 
 
