@@ -25,6 +25,7 @@ In this tutorial you will learn how you can seamlessly get started with Harness 
 
 To know more about Pipelines [check out the docs here](overview.md)
 Next, we are going to add Stages and steps to our Pipeline and compile our Python code.
+
 Click on **[Build step](build.md)**
 
 
