@@ -106,7 +106,8 @@ Then go to Execution (In this step we are going to compile the code)
       - Image: ```alpine```
       - Commands: Copy the following command and click on apply changes.
  
-         ```touch pythondockerfile
+         ```
+         touch pythondockerfile
          cat > pythondockerfile <<- EOM
          FROM python:3.10.6-alpine
          WORKDIR /py-sample-proj
@@ -114,7 +115,8 @@ Then go to Execution (In this step we are going to compile the code)
          RUN pip install -r requirements.txt
          CMD ["python" , "app.py"]
          EOM
-         cat pythondockerfile```
+         cat pythondockerfile
+         ```
          
       
  #### Build and Push Image to Docker Registry
