@@ -94,7 +94,6 @@ Then go to Execution (In this step we are going to compile the code)
  
  ###  Image Creation             
  - Click on ```Add step```
-   - Click on add step 
    - Go to builds and click on run 
    - Change the settings as following:
       **Name -create image 
@@ -111,7 +110,9 @@ Then go to Execution (In this step we are going to compile the code)
          CMD ["python" , "app.py"]
          EOM
          cat pythondockerfile
-         
+      
+ ### Build and Push Image to Docker Hub
+ - Click on ```Add step```
      
 
 
