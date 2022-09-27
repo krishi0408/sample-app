@@ -64,12 +64,12 @@ Click on Connect through Harness Delegate. [Check out more on Harness Delegate](
 To develop more understanding on Connectors [check out the docs here](overview.md)
 
 Then go to Execution (In this step we are going to compile the code)
-Click on ```Add step``` 
-Go to Build and click on Run 
-Change the settings as following 
-Name: ```Code compile```
-Container Registry
-Here we are going to create docker connector-
-Choose ``New connector```
+
+- Click on ```Add step``` 
+- Go to Build and click on Run 
+- Change the settings as following 
+- Name: ```Code compile```
+Container Registry -> Choose ``New connector```
+
 
 
