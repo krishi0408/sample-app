@@ -1,10 +1,8 @@
 ### Build Step
-
 - Click on ```Add Stage``` to get started with the pipeline creation
 - Select the type of stage as ```Build```
 - Configure the Stage Settings as below
-
-```Name: build test and run```
+  - Name: ```build test and run```
 
 **Setup the Connector as follows**
 
