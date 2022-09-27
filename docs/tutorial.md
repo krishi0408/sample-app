@@ -99,10 +99,10 @@ Then go to Execution (In this step we are going to compile the code)
    - Go to builds and click on run 
    - Change the settings as following:
    
-      **Name: ```create image``` 
-      **Container registry: Click on docker connecter created in the previous step 
-      **Image: ```alpine```
-      **Commands: Copy the following command and click on apply changes.
+      ** Name: ```create image``` 
+      ** Container registry: Click on docker connecter created in the previous step 
+      ** Image: ```alpine```
+      ** Commands: Copy the following command and click on apply changes.
          
          touch pythondockerfile
          cat > pythondockerfile <<- EOM
