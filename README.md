@@ -16,13 +16,14 @@ Introduction
 ========================
 This repository is a home for snippets of YAML code and a sample hello world server of scripting for the Harness CI Community.
 
-Layout
-Tutorial
-Requirements
-Harness Sample YAML
-Getting Started
-Workflow
-Build Instructions
+## Layout
+
+**[Tutorial](docs/tutorial.md)**<br>
+**[Requirements](docs/requirements.md)**<br>
+**[Harness Sample YAML](https://github.com/harness-community/python-pipeline-samples.git)**<br>
+**[Getting Started](#GettingStarted)**<br>
+**[Workflow](#Workflow)**<br>
+**[Build Instructions](docs/build.md)**<br>
 
 Getting Started
 
