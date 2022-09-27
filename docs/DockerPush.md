@@ -1,4 +1,4 @@
-####  Image Creation  
+##  Image Creation  
  
  - Click on ```Add step```
    - Go to builds and click on run 
@@ -22,7 +22,7 @@
          ```
          
       
- #### Build and Push Image to Docker Registry
+ ## Build and Push Image to Docker Registry
  - Click on ```Add step```
  - Go to ```builds``` and click on ```build and push an image to docker registry```
  -  Change the settings as following:
