@@ -10,7 +10,7 @@ TODO:
 - [ ] Explain a bit on what the sample app does
 - [ ] Other useful links
 - [ ] License info
-- [ ] Harness Community - Communication Guide
+- [ ] [Harness Community - Communication Guide](https://github.com/harness-community/overview/blob/main/community_communication_guide.rst)
 
 Introduction
 ========================
