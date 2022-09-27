@@ -66,22 +66,30 @@ To develop more understanding on Connectors [check out the docs here](overview.m
 Then go to Execution (In this step we are going to compile the code)
 
 - Click on ```Add step``` 
-- Go to Build and click on Run 
+- Go to ```Build``` and click on ```Run```
 - Change the settings as following 
 - Name: ```Code compile```
 Container Registry -> Choose ```New connector```
    - Click on ```Docker Registry```
    - Change the settings as following 
        - Overview 
-       - Name- ```docker quickstart```
+         - Name- ```docker quickstart```
        - Details 
-       - Docker registry url -  ```https://index.docker.io/v1/```
-       - Provider type - ```Docker Hub``` 
-       - Authentication - ```Username and Password```
+         - Docker registry url -  ```https://index.docker.io/v1/```
+         - Provider type - ```Docker Hub``` 
+         - Authentication - ```Username and Password```
          - Username - Docker hub username 
          - Secret Token - [Check out how to create docker PAT](Secret.md)
-       - Connect to Provider - Choose connect through harness delegate -> Select Harness delegate you created 
+       - Connect to Provider 
+         - Choose connect through harness delegate -> Select Harness delegate you created 
        - It will take sometime to verify your credentials.
+   - Image - ```python:3.10.6-alpine```
+   - Shell - ```Sh```
+   - Command
+      - python -m compileall ./
+   - Then click ```Apply changes``` 
+               
+
 
 
 
