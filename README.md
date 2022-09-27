@@ -3,15 +3,14 @@
 # To Do
 
 TODO:
-
- Understanding the basics of Harness 
- Requirements
- Environment
- Steps to use the samples on Harness App
- Explain a bit on what the sample app does
- Other useful links
- License info
- Harness Community - Communication Guide
+ []Understanding the basics of Harness 
+ []Requirements
+ []Environment
+ []Steps to use the samples on Harness App
+ []Explain a bit on what the sample app does
+ []Other useful links
+ []License info
+ []Harness Community - Communication Guide
 
 Introduction
 This repository is a home for snippets of YAML code and a sample hello world server of scripting for the Harness CI Community.
