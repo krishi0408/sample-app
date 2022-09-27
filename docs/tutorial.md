@@ -25,6 +25,8 @@ In this tutorial you will learn how you can seamlessly get started with Harness 
 
 To know more about Pipelines [check out the docs here](overview.md)
 
+### Build Step
+
 - Click on ```Add Stage``` to get started with the pipeline creation
 - Select the type of stage as ```Build```
 - Configure the Stage Settings as below
@@ -64,7 +66,7 @@ Click on Connect through Harness Delegate. [Check out more on Harness Delegate](
 To develop more understanding on Connectors [check out the docs here](overview.md)
 
 Then go to Execution (In this step we are going to compile the code)
-### Code Compilation
+#### Code Compilation
 - Click on ```Add step``` 
  - Go to ```Build``` and click on ```Run```
  - Change the settings as following 
@@ -92,14 +94,14 @@ Then go to Execution (In this step we are going to compile the code)
     ```python -m compileall ./```
   - Then click ```Apply changes``` 
  
- ###  Image Creation             
+ ####  Image Creation             
  - Click on ```Add step```
    - Go to builds and click on run 
    - Change the settings as following:
-      **Name -create image 
-      **Container registry - Click on docker connecter created in the previous step 
-      **Image - ```alpine```
-      **Commands - Copy the following command and click on apply changes.
+      **Name: ```create image``` 
+      **Container registry: Click on docker connecter created in the previous step 
+      **Image: ```alpine```
+      **Commands: Copy the following command and click on apply changes.
          
          touch pythondockerfile
          cat > pythondockerfile <<- EOM
@@ -111,8 +113,20 @@ Then go to Execution (In this step we are going to compile the code)
          EOM
          cat pythondockerfile
       
- ### Build and Push Image to Docker Hub
+ #### Build and Push Image to Docker Registry
  - Click on ```Add step```
+ - Go to ```builds``` and click on ```build and push an image to docker registry```
+ -  Change the settings as following:
+    - Name: ```Build and push image to docker hub```
+    - Docker connector: select the Docker connector you created previously 
+    - Docker repository: ```<docker-hub-username>/<docker-repository name>```
+    - Tags: ```latest```
+
+### Integeration Testing 
+
+    
+    
+
      
 
 
