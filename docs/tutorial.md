@@ -64,12 +64,12 @@ Click on Connect through Harness Delegate. [Check out more on Harness Delegate](
 To develop more understanding on Connectors [check out the docs here](overview.md)
 
 Then go to Execution (In this step we are going to compile the code)
-
+### Code Compilation
 - Click on ```Add step``` 
-- Go to ```Build``` and click on ```Run```
-- Change the settings as following 
-- Name: ```Code compile```
-- Container Registry -> Choose ```New connector```
+ - Go to ```Build``` and click on ```Run```
+ - Change the settings as following 
+ - Name: ```Code compile```
+ - Container Registry -> Choose ```New connector```
    - Click on ```Docker Registry```
    - Change the settings as following 
        - Overview 
@@ -83,15 +83,24 @@ Then go to Execution (In this step we are going to compile the code)
        - Connect to Provider 
          - Choose connect through harness delegate -> Select Harness delegate you created 
        - It will take sometime to verify your credentials.
- - Image:```python:3.10.6-alpine```
- - Shell: ```Sh```
- - Command:
+  - Image:```python:3.10.6-alpine```
+  - Shell: ```Sh```
+  - Command:
  
-   ```python3 -m venv venv```
+    ```python3 -m venv venv```
    
-   ```python -m compileall ./```
- - Then click ```Apply changes``` 
-               
+    ```python -m compileall ./```
+  - Then click ```Apply changes``` 
+ 
+ ###  Image Creation             
+ - Click on ```Add step```
+   - Click on add step 
+   - Go to builds and click on run 
+   - Change the settings as following:
+      **Name -create image 
+      **Container registry - Click on docker connecter created in the previous step 
+      **Image - ```alpine```
+      **Commands - Copy the following command and click on apply changes.
 
 
 
