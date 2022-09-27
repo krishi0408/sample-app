@@ -85,7 +85,8 @@ Then go to Execution (In this step we are going to compile the code)
        - It will take sometime to verify your credentials.
  - Image:```python:3.10.6-alpine```
  - Shell: ```Sh```
- - Command
+ - Command:
+ 
    ```python3 -m venv venv```
    
    ```python -m compileall ./```
