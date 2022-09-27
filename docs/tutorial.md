@@ -83,11 +83,12 @@ Container Registry -> Choose ```New connector```
        - Connect to Provider 
          - Choose connect through harness delegate -> Select Harness delegate you created 
        - It will take sometime to verify your credentials.
-   - Image - ```python:3.10.6-alpine```
-   - Shell - ```Sh```
-   - Command
-      - python -m compileall ./
-   - Then click ```Apply changes``` 
+  - Image:```python:3.10.6-alpine```
+  - Shell: ```Sh```
+  - Command
+      ```python3 -m venv venv```
+      ```python -m compileall ./```
+  - Then click ```Apply changes``` 
                
 
 
