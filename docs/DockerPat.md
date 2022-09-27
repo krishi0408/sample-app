@@ -1,5 +1,5 @@
 ## Follow the following steps to get the secret token
-  - Steps to get secret token in docker hub 
+  
   - Go to your docker hub account 
   - Go to account settings 
     - Go to Security 
