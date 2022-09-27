@@ -30,3 +30,7 @@
     - Docker connector: select the Docker connector you created previously 
     - Docker repository: ```<docker-hub-username>/<docker-repository name>```
     - Tags: ```latest```
+
+Now we move to Integeration Testing and running our Pipeline
+
+Click on **[Integeration Test and Run Pipeline](Integeration.md)**
