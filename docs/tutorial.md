@@ -167,9 +167,16 @@ Next, we can run an integration test. We'll simply test the connection to the se
         ```
         sleep 10
         curl localhost:5000
-       
-        ```
-    - Select ```Apply Changes```.
+       ```
+     - Select ```Apply Changes```.
+## Step 3: Run the Pipeline
+ - Click ↑Save.
+ - Click ```Run```. 
+ - The Pipeline Inputs settings appear.
+   - Under CI Codebase, select ```Git branch```.
+   - In Git Branch, enter the name of the branch where the codebase is, here ```main```
+     - Click Run Pipeline.
+
  
             
       
