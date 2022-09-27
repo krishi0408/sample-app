@@ -82,7 +82,7 @@ Then go to Execution (In this step we are going to compile the code)
          - Provider type - ```Docker Hub``` 
          - Authentication - ```Username and Password```
          - Username - Docker hub username 
-         - Secret Token - [Check out how to create docker PAT](Secret.md)
+         - Secret Token - [Check out how to create docker PAT](DockerPat.md)
        - Connect to Provider 
          - Choose connect through harness delegate -> Select Harness delegate you created 
        - It will take sometime to verify your credentials.
