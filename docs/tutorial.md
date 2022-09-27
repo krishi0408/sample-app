@@ -163,11 +163,14 @@ Next, we can run an integration test. We'll simply test the connection to the se
        - Name: ```test connection to server``` 
        - Container registry: select Docker connector you created .
        - Image: ```curlimages/curl:7.73.0```
-        - Commands:
-             ```
-              sleep 10
-              curl localhost:5000
-             ```
+       - Commands:
+       ```
+       sleep 10
+       curl localhost:5000
+       
+       ```
+ 
+            
       
 
 
