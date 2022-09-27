@@ -130,6 +130,7 @@ Then go to Execution (In this step we are going to compile the code)
 
 ### Integeration Testing 
 
+#### Python server
 Now you have a Stage to clone, build, containerize, and then push your image to Docker Hub. In this step you'll add a Stage to pull that image, run it       in a container, and run integration tests on it.
 
 - Click Add stage and select ```build```
@@ -155,14 +156,14 @@ Harness will pull the image onto the container in your infrastructure. Next, it 
           - Shell: ```Sh```
           - Select ```Apply changes``` 
 #### Connecting to server
-  Next, we can run an integration test. We'll simply test the connection to the server.
-       - Select add step in the execution tab of run integration stage 
-       - Go to Builds and select Run 
-       - Change the settings as following 
-          - Name: ```test connection to server``` 
-          - Container registry: select Docker connector you created .
-          - Image: ```curlimages/curl:7.73.0```
-           - Commands:
+Next, we can run an integration test. We'll simply test the connection to the server.
+- Select add step in the execution tab of run integration stage 
+  - Go to Builds and select Run 
+  - Change the settings as following 
+       - Name: ```test connection to server``` 
+       - Container registry: select Docker connector you created .
+       - Image: ```curlimages/curl:7.73.0```
+        - Commands:
              ```
               sleep 10
               curl localhost:5000
