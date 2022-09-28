@@ -1,3 +1,4 @@
+# this is a CI-Python yaml file 
 pipeline:
   name: ci-quick
   identifier: ciquick
@@ -9,6 +10,7 @@ pipeline:
       codebase:
         connectorRef: pysampleconn
         build: <+input>
+ # this depicts pipeline stages 
   stages:
     - stage:
         name: build test and run
