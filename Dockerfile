@@ -1,4 +1,4 @@
-FROM dfd/dfdd:latest
+FROM dhrubajyotichakraborty/ci-base-img:latest
 WORKDIR /usr/src/app
 COPY Pipfile ./
 RUN pip install --no-cache-dir pipenv==2020.11.15 && pipenv install
